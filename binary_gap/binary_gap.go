@@ -1,4 +1,4 @@
-package go_coding
+package binary_gap
 
 import (
 	"strconv"
