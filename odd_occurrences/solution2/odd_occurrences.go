@@ -16,6 +16,7 @@ func Solution(A []int) int {
 func CheckForOdd(A []int) int {
 	itemsMap := map[int]int{}
 
+	// counting frequencies of array elements
 	for i := 0; i < len(A); i++ {
 		itemsMap[A[i]]++
 	}
