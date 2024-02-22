@@ -2,6 +2,7 @@ package solution1
 
 // original implementation of Euclidean's algorithm
 // Euclidean algorithm by subtraction
+// Greatest common divisor
 func Solution(A, B int) int {
 	if A == B {
 		return A

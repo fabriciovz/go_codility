@@ -1,6 +1,7 @@
 package solution3
 
 // Binary Euclidean algorithm
+// Greatest common divisor
 func Solution(A, B, res int) int {
 	if A == B {
 		return res * A
