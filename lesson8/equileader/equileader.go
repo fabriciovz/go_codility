@@ -1,5 +1,7 @@
 package equileader
 
+// Detected time complexity:
+// O(N)
 func Solution(A []int) int {
 	N := len(A)
 	Half := N / 2

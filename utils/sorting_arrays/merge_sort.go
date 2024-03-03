@@ -16,7 +16,7 @@ func Sort(A []int) []int {
 	return merge
 }
 
-// get left and right sorted arrays
+// get left and right sorted slices
 func Merge(left []int, right []int) []int {
 	merge := make([]int, len(left)+len(right))
 	l, r := 0, 0
