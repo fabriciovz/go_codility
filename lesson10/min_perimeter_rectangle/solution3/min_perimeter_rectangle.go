@@ -2,7 +2,7 @@ package solution3
 
 import "math"
 
-// 100% https://app.codility.com/demo/results/trainingKWMNGM-2BT/
+// 100% https://app.codility.com/demo/results/trainingERFWXA-UUQ/
 const (
 	MAX_INT = 1000000000
 )

@@ -1,4 +1,4 @@
-package sieve_of_eratosthenes
+package solution1
 
 import (
 	"github.com/stretchr/testify/assert"

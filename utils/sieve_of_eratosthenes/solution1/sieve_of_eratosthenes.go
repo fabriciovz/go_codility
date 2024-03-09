@@ -1,4 +1,4 @@
-package sieve_of_eratosthenes
+package solution1
 
 // Find all prime numbers till N
 func Solution(N int) []int {
@@ -6,6 +6,7 @@ func Solution(N int) []int {
 	for i := range prime {
 		prime[i] = true
 	}
+	prime[0], prime[1] = false, false
 	i := 2
 	for i*i < N {
 		if prime[i] {
