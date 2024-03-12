@@ -21,6 +21,8 @@ func Solution(A []int, B []int) []int {
 	//Create a fibo list
 	for i := 3; i < N+1; i++ {
 		pow := int(math.Pow(2, 30))
+		//To avoid overflow, it is applied the pisano period to repeat fibo sequence
+		//https://en.wikipedia.org/wiki/Pisano_period
 		next := (fibonacci[i-2] + fibonacci[i-1]) % pow
 		fibonacci = append(fibonacci, next)
 	}
