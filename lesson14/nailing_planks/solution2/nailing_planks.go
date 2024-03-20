@@ -15,9 +15,11 @@ func Solution(A []int, B []int, C []int) int {
 		for i := 0; i < len(nail); i++ {
 			nail[i] = 0
 		}
+		//filling nails up to mid
 		for i := 0; i < mid; i++ {
 			nail[C[i]]++
 		}
+		//doing prefix sum
 		for i := 1; i < len(nail); i++ {
 			nail[i] = nail[i] + nail[i-1]
 		}
