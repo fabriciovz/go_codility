@@ -6,6 +6,7 @@ import "fmt"
 // 72%
 //Detected time complexity:
 //O(N**2 * max(abs(A)))
+//Ref: https://www.youtube.com/watch?v=FB0KUhsxXGY&t=110s
 
 func Abs(a int) int {
 	if a >= 0 {

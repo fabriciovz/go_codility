@@ -11,33 +11,31 @@ func Abs(a int) int {
 	return -a
 }
 
-func Max(A []int) int {
-	maxN := Abs(A[0])
-	for i := 1; i < len(A); i++ {
-		absN := Abs(A[i])
-		if absN > maxN {
-			maxN = absN
+func Solution(A []int) int {
+	N := len(A)
+	sum := 0
+
+	if N == 0 {
+		return sum
+	}
+
+	//Get the Max item in array A and convert the array to abs
+	maxA := Abs(A[0])
+	A[0] = Abs(A[0])
+	for i := 1; i < N; i++ {
+		A[i] = Abs(A[i])
+		if A[i] > maxA {
+			maxA = A[i]
 		}
 	}
-	return maxN
-}
 
-func Solution(A []int) int {
-	maxLen := 0
-
-	if len(A) == 0 {
-		return maxLen
-	}
-
-	var maxA = Max(A)
 	countNum := make([]int, maxA+1)
 	for _, a := range A {
-		absNum := Abs(a)
-		countNum[absNum] = countNum[absNum] + 1
-		maxLen = maxLen + absNum
+		countNum[a] += 1
+		sum += a
 	}
 
-	subset := make([]int, maxLen/2+1)
+	subset := make([]int, sum/2+1)
 	subset[0] = 1
 	for x, v := range countNum {
 		if v == 0 {
@@ -52,13 +50,13 @@ func Solution(A []int) int {
 		}
 	}
 
-	result := maxLen
+	result := sum
 	for k, s := range subset {
 		if s == 0 {
 			continue
 		}
-		if result > maxLen-k*2 {
-			result = maxLen - k*2
+		if result > sum-k*2 {
+			result = sum - k*2
 		}
 	}
 	return result
