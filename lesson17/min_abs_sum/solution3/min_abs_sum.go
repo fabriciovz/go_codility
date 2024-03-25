@@ -3,6 +3,7 @@ package solution3
 //Detected time complexity:
 //O(N * max(abs(A))**2)
 //100% https://app.codility.com/demo/results/training4XQ5MZ-5W4/
+//Reference: https://codility.com/media/train/solution-min-abs-sum.pdf
 
 func Abs(a int) int {
 	if a >= 0 {
