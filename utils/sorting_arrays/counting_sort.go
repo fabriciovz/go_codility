@@ -46,7 +46,7 @@ func GetSortedArray(A, prefixSum []int) []int {
 	for i := 0; i < len(A); i++ {
 		valueOriginaArray := A[i]
 		valueFromPrefixSumArray := prefixSum[valueOriginaArray]
-		sortedArray[valueFromPrefixSumArray-1] = A[i]
+		sortedArray[valueFromPrefixSumArray-1] = valueOriginaArray
 		prefixSum[valueOriginaArray]--
 	}
 	return sortedArray

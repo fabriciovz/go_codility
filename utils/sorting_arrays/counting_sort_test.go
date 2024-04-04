@@ -24,4 +24,13 @@ func TestCountingSort(t *testing.T) {
 		assert.Equal(t, expected, got)
 
 	})
+	t.Run("Given A = {4,9,2,4,7,6}, then the function should return {2, 4, 4, 6, 7, 9}", func(t *testing.T) {
+		a := []int{1, 0, 3, 1, 3, 1}
+		expected := []int{0, 1, 1, 1, 3, 3}
+
+		got := CountingSort(a)
+
+		assert.Equal(t, expected, got)
+
+	})
 }
