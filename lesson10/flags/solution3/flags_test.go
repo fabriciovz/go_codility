@@ -1,4 +1,4 @@
-package solution2
+package solution3
 
 import (
 	"github.com/stretchr/testify/assert"
@@ -31,7 +31,7 @@ func TestFlags(t *testing.T) {
 
 			assert.Equal(t, expected, got)
 		})
-		t.Run("Given N := []int{1, 2, 1, 2, 1, 2, 1, 2, 1}, the function should return 0", func(t *testing.T) {
+		t.Run("Given N := []int{1, 2, 1, 2, 1, 2, 1, 2, 1}, the function should return 2", func(t *testing.T) {
 			N := []int{1, 2, 1, 2, 1, 2, 1, 2, 1, 2}
 			expected := 2
 
@@ -39,7 +39,7 @@ func TestFlags(t *testing.T) {
 
 			assert.Equal(t, expected, got)
 		})
-		t.Run("Given N := []int{1, 2, 1, 2, 1, 2, 1, 2, 1}, the function should return 0", func(t *testing.T) {
+		t.Run("Given N := []int{5}, the function should return 0", func(t *testing.T) {
 			N := []int{5}
 			expected := 0
 

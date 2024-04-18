@@ -1,4 +1,4 @@
-package solution1
+package solution2
 
 import "math"
 
@@ -23,7 +23,7 @@ func Solution(A []int) int {
 	}
 	maxFlags := int(math.Ceil(math.Sqrt(float64(peaks[NofPeaks-1] - peaks[0]))))
 
-	for flags := maxFlags; flags >= 1; flags-- {
+	for flags := maxFlags; flags > 1; flags-- {
 		startIndex := 0
 		endIndex := NofPeaks - 1
 
@@ -33,6 +33,9 @@ func Solution(A []int) int {
 		flagsPlaced := 2
 
 		for startIndex < endIndex {
+			if flagsPlaced == flags {
+				return flags
+			}
 			startIndex++
 			endIndex--
 			if peaks[startIndex] >= startFlag+flags {
@@ -46,10 +49,6 @@ func Solution(A []int) int {
 					flagsPlaced++
 					endFlag = peaks[endIndex]
 				}
-			}
-
-			if flagsPlaced == flags {
-				return flags
 			}
 		}
 	}
