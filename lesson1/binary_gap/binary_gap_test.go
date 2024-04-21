@@ -8,9 +8,11 @@ import (
 
 func TestBinaryGap(t *testing.T) {
 	t.Run("when 9 is pass, then it's got 2", func(t *testing.T) {
-		binaryGap := Solution(9)
+		expected := 2
 
-		assert.Equal(t, 2, binaryGap)
+		got := Solution(9)
+
+		assert.Equal(t, expected, got)
 	})
 	t.Run("when 529 is pass, then it's got 4", func(t *testing.T) {
 		binary_gap := Solution(529)
