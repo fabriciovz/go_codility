@@ -6,7 +6,7 @@ import (
 )
 
 func TestTriangle(t *testing.T) {
-	t.Run("Given A := []int{10, 2, 5, 1, 8, 20}, the function should return 1", func(t *testing.T) {
+	t.Run("Given A := []int{4, 3, 2, 1, 5},B := []int{0, 1, 0, 0, 0}, the function should return 2", func(t *testing.T) {
 		A := []int{4, 3, 2, 1, 5}
 		B := []int{0, 1, 0, 0, 0}
 
@@ -16,7 +16,7 @@ func TestTriangle(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A := []int{10, 2, 5, 1, 8, 20}, the function should return 1", func(t *testing.T) {
+	t.Run("Given A := []int{4, 3, 2, 1, 1},B := []int{0, 1, 0, 0, 0}, the function should return 0", func(t *testing.T) {
 		A := []int{4, 3, 2, 1, 1}
 		B := []int{0, 1, 0, 0, 0}
 
@@ -26,7 +26,7 @@ func TestTriangle(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A := []int{10, 2, 5, 1, 8, 20}, the function should return 1", func(t *testing.T) {
+	t.Run("Given A := []int{4, 3, 2, 1, 1},B := []int{5, 1, 0, 0, 0}, the function should return 0", func(t *testing.T) {
 		A := []int{4, 3, 2, 1, 1}
 		B := []int{5, 1, 0, 0, 0}
 
@@ -36,7 +36,7 @@ func TestTriangle(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A := []int{10, 2, 5, 1, 8, 20}, the function should return 1", func(t *testing.T) {
+	t.Run("Given A := []int{4, 3, 2, 1, 5},B := []int{1, 0, 1, 0, 1}, the function should return 3", func(t *testing.T) {
 		A := []int{4, 3, 2, 1, 5}
 		B := []int{1, 0, 1, 0, 1}
 
@@ -46,7 +46,7 @@ func TestTriangle(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A := []int{10, 2, 5, 1, 8, 20}, the function should return 1", func(t *testing.T) {
+	t.Run("Given A := []int{4, 3, 2, 0, 5},B := []int{0, 1, 0, 0, 0}, the function should return 2", func(t *testing.T) {
 		A := []int{4, 3, 2, 0, 5}
 		B := []int{0, 1, 0, 0, 0}
 
@@ -56,7 +56,7 @@ func TestTriangle(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A := []int{10, 2, 5, 1, 8, 20}, the function should return 1", func(t *testing.T) {
+	t.Run("Given A := []int{4, 3, 2, 1, 5},B := []int{0, 1, 0, 0, 0}, the function should return 2", func(t *testing.T) {
 		A := []int{4, 3, 2, 1, 5}
 		B := []int{0, 1, 0, 0, 0}
 
@@ -66,7 +66,7 @@ func TestTriangle(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A := []int{10, 2, 5, 1, 8, 20}, the function should return 1", func(t *testing.T) {
+	t.Run("Given A := []int{4, 3, 2, 1, 5},B := []int{0, 1, 1, 0, 0}, the function should return 2", func(t *testing.T) {
 		A := []int{4, 3, 2, 1, 5}
 		B := []int{0, 1, 1, 0, 0}
 
@@ -76,7 +76,7 @@ func TestTriangle(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A := []int{10, 2, 5, 1, 8, 20}, the function should return 1", func(t *testing.T) {
+	t.Run("Given A := []int{4, 3, 2, 5, 6},B := []int{1, 0, 1, 0, 1}, the function should return 2", func(t *testing.T) {
 		A := []int{4, 3, 2, 5, 6}
 		B := []int{1, 0, 1, 0, 1}
 
@@ -86,7 +86,7 @@ func TestTriangle(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A := []int{10, 2, 5, 1, 8, 20}, the function should return 1", func(t *testing.T) {
+	t.Run("Given A := []int{7, 4, 3, 2, 5, 6},B := []int{0, 1, 1, 1, 0, 1}, the function should return 3", func(t *testing.T) {
 		A := []int{7, 4, 3, 2, 5, 6}
 		B := []int{0, 1, 1, 1, 0, 1}
 
@@ -96,7 +96,7 @@ func TestTriangle(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A := []int{10, 2, 5, 1, 8, 20}, the function should return 1", func(t *testing.T) {
+	t.Run("Given A := []int{3, 4, 2, 1, 5},B := []int{1, 0, 0, 0, 0}, the function should return 4", func(t *testing.T) {
 		A := []int{3, 4, 2, 1, 5}
 		B := []int{1, 0, 0, 0, 0}
 
@@ -106,7 +106,7 @@ func TestTriangle(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A := []int{10, 2, 5, 1, 8, 20}, the function should return 1", func(t *testing.T) {
+	t.Run("Given A := []int{3},B := []int{1}, the function should return 1", func(t *testing.T) {
 		A := []int{3}
 		B := []int{1}
 
@@ -116,7 +116,7 @@ func TestTriangle(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A := []int{10, 2, 5, 1, 8, 20}, the function should return 1", func(t *testing.T) {
+	t.Run("Given A := []int{3},B := []int{0}, the function should return 1", func(t *testing.T) {
 		A := []int{3}
 		B := []int{0}
 

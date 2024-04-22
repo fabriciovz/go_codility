@@ -1,4 +1,4 @@
-package solution1
+package count_semiprimes
 
 // https://app.codility.com/demo/results/training7TH7H2-26S/
 func Solution(N int, P []int, Q []int) []int {

@@ -6,7 +6,7 @@ import (
 )
 
 func TestMinMaxDiv(t *testing.T) {
-	t.Run("Given N=0, then the function should return 0", func(t *testing.T) {
+	t.Run("Given A := []int{2, 1, 5, 1, 2, 2, 2}, K := 3 and M := 5, then the function should return 6", func(t *testing.T) {
 		A := []int{2, 1, 5, 1, 2, 2, 2}
 		K := 3
 		M := 5
@@ -16,7 +16,7 @@ func TestMinMaxDiv(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given N=0, then the function should return 0", func(t *testing.T) {
+	t.Run("Given A := []int{2, 1, 5, 1, 2, 2, 2}, K := 7 and M := 5, then the function should return 5", func(t *testing.T) {
 		A := []int{2, 1, 5, 1, 2, 2, 2}
 		K := 7
 		M := 5

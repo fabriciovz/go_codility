@@ -2,7 +2,7 @@ package solution1
 
 // 80% https://app.codility.com/demo/results/trainingP57CAA-79C/
 const (
-	MAX_INT = 1000000000
+	MAX_INT = 2000000000
 )
 
 func Solution(N int) int {

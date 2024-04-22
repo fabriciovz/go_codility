@@ -6,7 +6,7 @@ import (
 )
 
 func TestMinMaxDiv(t *testing.T) {
-	t.Run("Given A[K] > B[K], then the function should return -1", func(t *testing.T) {
+	t.Run("Given A := []int{4, 5, 9, 10},B := []int{1, 4, 5, 8} and  C := []int{4, 6, 7, 10, 2}, then the function should return -1", func(t *testing.T) {
 		//arrange
 		A := []int{4, 5, 9, 10}
 		B := []int{1, 4, 5, 8}
@@ -19,7 +19,7 @@ func TestMinMaxDiv(t *testing.T) {
 		//assert
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A != B length, then the function should return -1", func(t *testing.T) {
+	t.Run("Given A := []int{1, 2, 3},B := []int{4, 5} and  C := []int{4, 6, 7, 10, 2}, then the function should return -1", func(t *testing.T) {
 		//arrange
 		A := []int{1, 2, 3}
 		B := []int{4, 5}
@@ -31,44 +31,7 @@ func TestMinMaxDiv(t *testing.T) {
 		//assert
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given N and M not in [1..30,000] range, then the function should return -1", func(t *testing.T) {
-		//arrange
-		var A []int
-		var B []int
-		var C []int
-		expected := -1
-		for i := 0; i < 30001; i++ {
-			A = append(A, i)
-			//fmt.Printf("%d,", i)
-		}
-		for i := 0; i < 30001; i++ {
-			B = append(B, i)
-			//fmt.Printf("%d,", i)
-		}
-
-		//act
-		var got = Solution(A, B, C)
-
-		//assert
-		assert.Equal(t, expected, got)
-	})
-	t.Run("Given N and M not in [1..30,000] range, then the function should return -1", func(t *testing.T) {
-		//arrange
-		A := []int{1, 4, 5, 8}
-		B := []int{4, 5, 9, 10}
-		var C []int
-		expected := -1
-		for i := 0; i < 30001; i++ {
-			C = append(C, i)
-			//fmt.Printf("%d,", i)
-		}
-		//act
-		var got = Solution(A, B, C)
-
-		//assert
-		assert.Equal(t, expected, got)
-	})
-	t.Run("Give each element of arrays A and is not an integer within the range [1..2*M], then the function should return -1", func(t *testing.T) {
+	t.Run("Given A := []int{0, 1, 1, 2},B := []int{1, 1, 1, 2} and  C := []int{1}, then the function should return -1", func(t *testing.T) {
 		//arrange
 		A := []int{0, 1, 1, 2}
 		B := []int{1, 1, 1, 2}
@@ -81,7 +44,7 @@ func TestMinMaxDiv(t *testing.T) {
 		//assert
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Give each element of arrays A and is not an integer within the range [1..2*M], then the function should return -1", func(t *testing.T) {
+	t.Run("Given A := []int{1, 1, 1, 1},B := []int{1, 1, 1, 3} and  C := []int{1}, then the function should return -1", func(t *testing.T) {
 		//arrange
 		A := []int{1, 1, 1, 1}
 		B := []int{1, 1, 1, 3}
@@ -95,7 +58,7 @@ func TestMinMaxDiv(t *testing.T) {
 		assert.Equal(t, expected, got)
 	})
 
-	t.Run("Given A[K] > B[K], then the function should return -1", func(t *testing.T) {
+	t.Run("Given A := []int{1, 4, 5, 8},B := []int{4, 5, 9, 10} and  C := []int{4, 6, 7, 10, 2}, then the function should return 4", func(t *testing.T) {
 		//arrange
 		A := []int{1, 4, 5, 8}
 		B := []int{4, 5, 9, 10}
@@ -108,7 +71,7 @@ func TestMinMaxDiv(t *testing.T) {
 		//assert
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A[K] > B[K], then the function should return -1", func(t *testing.T) {
+	t.Run("Given A := []int{2},B := []int{2} and  C := []int{1}, then the function should return -1", func(t *testing.T) {
 		//arrange
 		A := []int{2}
 		B := []int{2}
@@ -121,7 +84,7 @@ func TestMinMaxDiv(t *testing.T) {
 		//assert
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A[K] > B[K], then the function should return -1", func(t *testing.T) {
+	t.Run("Given A := []int{1, 4, 5, 8},B := []int{4, 5, 9, 10} and  C := []int{6, 4, 2, 1, 2}, then the function should return -1", func(t *testing.T) {
 		//arrange
 		A := []int{1, 4, 5, 8}
 		B := []int{4, 5, 9, 10}

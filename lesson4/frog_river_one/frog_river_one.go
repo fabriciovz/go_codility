@@ -1,8 +1,7 @@
 package frog_river_one
 
-//Detected time complexity:
-//O(N)
-
+// Detected time complexity:
+// O(N)
 func Solution(X int, A []int) int {
 	if !IsValidArrayElem(X, A) {
 		return -1

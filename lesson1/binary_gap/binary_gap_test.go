@@ -7,32 +7,45 @@ import (
 )
 
 func TestBinaryGap(t *testing.T) {
-	t.Run("when 9 is pass, then it's got 2", func(t *testing.T) {
+	t.Run("Given N := 9, the function should return 2", func(t *testing.T) {
+		N := 9
 		expected := 2
 
-		got := Solution(9)
+		got := Solution(N)
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("when 529 is pass, then it's got 4", func(t *testing.T) {
-		binary_gap := Solution(529)
+	t.Run("Given N := 529, the function should return 4", func(t *testing.T) {
+		N := 529
+		expected := 4
 
-		assert.Equal(t, 4, binary_gap)
+		got := Solution(N)
+
+		assert.Equal(t, expected, got)
 	})
-	t.Run("when 20 is pass, then it's got 1", func(t *testing.T) {
-		binary_gap := Solution(20)
+	t.Run("Given N := 20, the function should return 1", func(t *testing.T) {
+		N := 20
+		expected := 1
 
-		assert.Equal(t, 1, binary_gap)
+		got := Solution(N)
+
+		assert.Equal(t, expected, got)
 	})
-	t.Run("when 15 is pass, then it's got 0", func(t *testing.T) {
-		binary_gap := Solution(15)
+	t.Run("Given N := 15, the function should return 0", func(t *testing.T) {
+		N := 15
+		expected := 0
 
-		assert.Equal(t, 0, binary_gap)
+		got := Solution(N)
+
+		assert.Equal(t, expected, got)
 	})
-	t.Run("when 32 is pass, then it's got 0", func(t *testing.T) {
-		binary_gap := Solution(32)
+	t.Run("Given N := 32, the function should return 0", func(t *testing.T) {
+		N := 32
+		expected := 0
 
-		assert.Equal(t, 0, binary_gap)
+		got := Solution(N)
+
+		assert.Equal(t, expected, got)
 	})
 
 }

@@ -2,9 +2,8 @@ package solution1
 
 import "fmt"
 
-//Detected time complexity:
-//O(N ** 2)
-
+// Detected time complexity:
+// O(N ** 2)
 func Solution(A []int) int {
 	if len(A) == 0 {
 		return 1
@@ -18,8 +17,6 @@ func Solution(A []int) int {
 	}
 	sorted := Sort(A)
 	missing := CheckMissing(sorted)
-	fmt.Println(sorted)
-	fmt.Println(missing)
 
 	return missing
 }

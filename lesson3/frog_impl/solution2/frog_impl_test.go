@@ -76,7 +76,7 @@ func TestFrogImpl(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given X = 1, Y = 1, D = 3, the function should return 0", func(t *testing.T) {
+	t.Run("Given X = 5, Y = 1000000000, D = 2, the function should return 499999998", func(t *testing.T) {
 		x := 5
 		y := 1000000000
 		d := 2

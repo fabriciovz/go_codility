@@ -2,9 +2,8 @@ package solution1
 
 import "fmt"
 
-//Detected time complexity:
-//O(n^2)
-
+// Detected time complexity:
+// O(n^2)
 func Solution(A []int) int {
 	if len(A) == 1 {
 		return A[0]

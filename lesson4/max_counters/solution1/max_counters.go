@@ -1,8 +1,7 @@
 package solution1
 
-//77% https://app.codility.com/demo/results/trainingFXF4JD-JGR/
+// 77% https://app.codility.com/demo/results/trainingFXF4JD-JGR/
 func Solution(N int, A []int) []int {
-
 	if !IsvalidN(N) || !IsvalidN(len(A)) || !IsValidArray(A, N) {
 		return []int{}
 	}

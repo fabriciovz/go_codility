@@ -6,7 +6,7 @@ import (
 )
 
 func TestEuclideanAlgorithm(t *testing.T) {
-	t.Run("Given A=10 and B=4, then the function should return 5", func(t *testing.T) {
+	t.Run("Given N := 10 and M := 4, then the function should return 5", func(t *testing.T) {
 		N := 10
 		M := 4
 		expected := 5
@@ -15,7 +15,7 @@ func TestEuclideanAlgorithm(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A=10 and B=10, then the function should return 1", func(t *testing.T) {
+	t.Run("Given N := 10 and M := 10, then the function should return 1", func(t *testing.T) {
 		N := 10
 		M := 10
 		expected := 1
@@ -24,7 +24,7 @@ func TestEuclideanAlgorithm(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A=10 and B=1, then the function should return 10", func(t *testing.T) {
+	t.Run("Given N := 10 and M := 1, then the function should return 10", func(t *testing.T) {
 		N := 10
 		M := 1
 		expected := 10
@@ -34,7 +34,7 @@ func TestEuclideanAlgorithm(t *testing.T) {
 		assert.Equal(t, expected, got)
 	})
 
-	t.Run("Given A=10 and B=9, then the function should return 10", func(t *testing.T) {
+	t.Run("Given N := 10 and M := 9, then the function should return 10", func(t *testing.T) {
 		N := 10
 		M := 9
 		expected := 10

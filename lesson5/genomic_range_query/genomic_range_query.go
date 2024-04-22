@@ -1,9 +1,8 @@
 package genomic_range_query
 
-//Detected time complexity:
-//O(N + M)
-//100% https://app.codility.com/demo/results/training97F54B-ZR3/
-
+// Detected time complexity:
+// O(N + M)
+// 100% https://app.codility.com/demo/results/training97F54B-ZR3/
 func Solution(S string, P []int, Q []int) []int {
 	mapImpact := map[rune]int{
 		'A': 1,

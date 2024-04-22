@@ -15,7 +15,7 @@ func TestCyclicRotation(t *testing.T) {
 		assert.Equal(t, expected, got)
 	})
 
-	t.Run("Given A = ([)()] , the function should return 0", func(t *testing.T) {
+	t.Run("Given A = ([)()], the function should return 0", func(t *testing.T) {
 		var a = "([)()]"
 		var expected = 0
 
@@ -24,7 +24,7 @@ func TestCyclicRotation(t *testing.T) {
 		assert.Equal(t, expected, got)
 	})
 
-	t.Run("Given A = {[()()]} the function should return 1", func(t *testing.T) {
+	t.Run("Given A = (([]){}[]) the function should return 1", func(t *testing.T) {
 		var a = "(([]){}[])"
 		var expected = 1
 

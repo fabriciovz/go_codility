@@ -6,7 +6,7 @@ import (
 )
 
 func TestMaxProductOfThree(t *testing.T) {
-	t.Run("Given A={1, 3, 1, 4, 2, 3, 5, 4}, the function should return 6", func(t *testing.T) {
+	t.Run("Given A={-3, 1, 2, -2, 5, 6}, the function should return 60", func(t *testing.T) {
 		a := []int{-3, 1, 2, -2, 5, 6}
 		expected := 60
 
@@ -15,7 +15,7 @@ func TestMaxProductOfThree(t *testing.T) {
 		assert.Equal(t, expected, got)
 	})
 
-	t.Run("Given A={-5, -7, 4, 2, 1, 9}, the function should return 6", func(t *testing.T) {
+	t.Run("Given A={-5, -7, 4, 2, 1, 9}, the function should return 315", func(t *testing.T) {
 		a := []int{-5, -7, 4, 2, 1, 9}
 		expected := 315
 
@@ -23,7 +23,7 @@ func TestMaxProductOfThree(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A={4, 5, -19, 3}, the function should return 6", func(t *testing.T) {
+	t.Run("Given A={4, 5, -19, 3}, the function should return 60", func(t *testing.T) {
 		a := []int{4, 5, -19, 3}
 		expected := 60
 
@@ -32,7 +32,7 @@ func TestMaxProductOfThree(t *testing.T) {
 		assert.Equal(t, expected, got)
 	})
 
-	t.Run("Given A={1, 3, 1, 4, 2, 3, 5, 4}, the function should return 6", func(t *testing.T) {
+	t.Run("Given A={-10, -2, -4}, the function should return -80", func(t *testing.T) {
 		a := []int{-10, -2, -4}
 		expected := -80
 
@@ -41,7 +41,7 @@ func TestMaxProductOfThree(t *testing.T) {
 		assert.Equal(t, expected, got)
 	})
 
-	t.Run("Given A={1, 3, 1, 4, 2, 3, 5, 4}, the function should return 6", func(t *testing.T) {
+	t.Run("Given A={-10, -2, -4, 3}, the function should return 120", func(t *testing.T) {
 		a := []int{-10, -2, -4, 3}
 		expected := 120
 
@@ -49,7 +49,7 @@ func TestMaxProductOfThree(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A={1, 3, 1, 4, 2, 3, 5, 4}, the function should return 6", func(t *testing.T) {
+	t.Run("Given A={-5, -6, -4, -7, -10}, the function should return -120", func(t *testing.T) {
 		a := []int{-5, -6, -4, -7, -10}
 		expected := -120
 

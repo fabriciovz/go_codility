@@ -55,7 +55,7 @@ func TestMaxSliceSum(t *testing.T) {
 
 			assert.Equal(t, expected, got)
 		})
-		t.Run("Given A = {-2, -2}, the function should return -2", func(t *testing.T) {
+		t.Run("Given A = {-2, -2}, the function should return 0", func(t *testing.T) {
 			var a []int
 			expected := 0
 

@@ -6,7 +6,6 @@ import (
 )
 
 func TestPermMissingElem(t *testing.T) {
-
 	t.Run("Given A = {2,3,1,5}, then the function should return 4", func(t *testing.T) {
 		a := []int{2, 3, 1, 5}
 		expected := 4
@@ -34,7 +33,7 @@ func TestPermMissingElem(t *testing.T) {
 		assert.Equal(t, expected, got)
 
 	})
-	t.Run("Given A = {}, then the function should return 1", func(t *testing.T) {
+	t.Run("Given A = {1, 3}, then the function should return 2", func(t *testing.T) {
 		a := []int{1, 3}
 		expected := 2
 
@@ -43,7 +42,7 @@ func TestPermMissingElem(t *testing.T) {
 		assert.Equal(t, expected, got)
 
 	})
-	t.Run("Given A = {}, then the function should return 1", func(t *testing.T) {
+	t.Run("Given A = {3, 4, 1}, then the function should return 2", func(t *testing.T) {
 		a := []int{3, 4, 1}
 		expected := 2
 

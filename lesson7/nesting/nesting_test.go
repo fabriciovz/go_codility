@@ -6,7 +6,7 @@ import (
 )
 
 func TestNesting(t *testing.T) {
-	t.Run("Given A := []int{10, 2, 5, 1, 8, 20}, the function should return 1", func(t *testing.T) {
+	t.Run("Given S='(()(())())', the function should return 1", func(t *testing.T) {
 		S := "(()(())())"
 		expected := 1
 
@@ -14,7 +14,7 @@ func TestNesting(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A := []int{10, 2, 5, 1, 8, 20}, the function should return 1", func(t *testing.T) {
+	t.Run("Given S='', the function should return 1", func(t *testing.T) {
 		S := ""
 		expected := 1
 
@@ -22,7 +22,7 @@ func TestNesting(t *testing.T) {
 
 		assert.Equal(t, expected, got)
 	})
-	t.Run("Given A := []int{10, 2, 5, 1, 8, 20}, the function should return 1", func(t *testing.T) {
+	t.Run("Given S='())', the function should return 0", func(t *testing.T) {
 		S := "())"
 		expected := 0
 
