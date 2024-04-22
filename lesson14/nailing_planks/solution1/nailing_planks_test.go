@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestMinMaxDiv(t *testing.T) {
+func TestNailingPlanks(t *testing.T) {
 	t.Run("Given A := []int{4, 5, 9, 10},B := []int{1, 4, 5, 8} and  C := []int{4, 6, 7, 10, 2}, then the function should return -1", func(t *testing.T) {
 		//arrange
 		A := []int{4, 5, 9, 10}

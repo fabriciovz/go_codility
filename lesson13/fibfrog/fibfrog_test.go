@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestEuclideanAlgorithm(t *testing.T) {
+func TestFigFrog(t *testing.T) {
 	t.Run("Given N := []int{0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0}, then the function should return 3", func(t *testing.T) {
 		N := []int{0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0}
 		expected := 3

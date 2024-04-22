@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestCountFactor(t *testing.T) {
+func TestFlags(t *testing.T) {
 	{
 		t.Run("Given N := []int{1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2}, the function should return 3", func(t *testing.T) {
 			N := []int{1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2}

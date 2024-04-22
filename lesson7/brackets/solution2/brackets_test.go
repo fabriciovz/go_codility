@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestCyclicRotation(t *testing.T) {
+func TestBrackets(t *testing.T) {
 	t.Run("Given A = {[()()]} the function should return 1", func(t *testing.T) {
 		var a = "{[()()]}"
 		var expected = 1

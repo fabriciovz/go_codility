@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestEuclideanAlgorithm(t *testing.T) {
+func TestChocolatesByNumbers(t *testing.T) {
 	t.Run("Given N := 10 and M := 4, then the function should return 5", func(t *testing.T) {
 		N := 10
 		M := 4

@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestCountDiv(t *testing.T) {
+func TestMinAVGTwoSlices(t *testing.T) {
 	t.Run("Given A := []int{4, 2, 2, 5, 1, 5, 8}, the function should return 1", func(t *testing.T) {
 		A := []int{4, 2, 2, 5, 1, 5, 8}
 		expected := 1

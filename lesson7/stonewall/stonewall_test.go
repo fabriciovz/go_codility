@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestNesting(t *testing.T) {
+func TestStoneWall(t *testing.T) {
 	t.Run("Given A := []int{8, 8, 5, 7, 9, 8, 7, 4, 8}, the function should return 7", func(t *testing.T) {
 		H := []int{8, 8, 5, 7, 9, 8, 7, 4, 8}
 		expected := 7

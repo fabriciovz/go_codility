@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestTriangle(t *testing.T) {
+func TestFish(t *testing.T) {
 	t.Run("Given A := []int{4, 3, 2, 1, 5},B := []int{0, 1, 0, 0, 0}, the function should return 2", func(t *testing.T) {
 		A := []int{4, 3, 2, 1, 5}
 		B := []int{0, 1, 0, 0, 0}

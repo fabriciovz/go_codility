@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestCountDiv(t *testing.T) {
+func TestGenomicRangeQuery(t *testing.T) {
 	t.Run("Given P := []int{2, 5, 0}, Q := []int{4, 5, 6} and S := 'CAGCCTA', the function should return {2, 4, 1}", func(t *testing.T) {
 		P := []int{2, 5, 0}
 		Q := []int{4, 5, 6}

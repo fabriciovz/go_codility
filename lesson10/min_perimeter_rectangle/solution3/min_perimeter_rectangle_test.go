@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestCountFactor(t *testing.T) {
+func TestMinPerimeterRectangle(t *testing.T) {
 	{
 		t.Run("Given N=30, the function should return 22", func(t *testing.T) {
 			N := 30

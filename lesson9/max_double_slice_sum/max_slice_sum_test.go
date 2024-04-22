@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestMaxSliceSum(t *testing.T) {
+func TestMaxDoubleSliceSum(t *testing.T) {
 	{
 		t.Run("Given A = {3, 2, 6, -1, 4, 5, -1, 2}, the function should return 17", func(t *testing.T) {
 			a := []int{3, 2, 6, -1, 4, 5, -1, 2}

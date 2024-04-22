@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestFrogRiverOne(t *testing.T) {
+func TestMissingInteger(t *testing.T) {
 	t.Run("Given A={1, 3, 6, 4, 1, 2}, the function should return 5", func(t *testing.T) {
 		A := []int{1, 3, 6, 4, 1, 2}
 		expected := 5
